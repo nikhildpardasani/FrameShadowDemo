@@ -8,9 +8,7 @@
              BackgroundColor="{DynamicResource PageBackgroundColor}"
              x:Class="FrameShadowDemo.MainPage">
     <StackLayout Spacing="10"
-                 Padding="0,8">
-        <!-- Place new controls here -->
-
+                 Padding="0,30">
         <Button x:Name="Button1"
                 Text="Click here to change Theme" />
 
