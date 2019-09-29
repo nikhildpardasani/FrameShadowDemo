@@ -13,9 +13,18 @@ namespace FrameShadowDemo
     [DesignTimeVisible(false)]
     public partial class MainPage : ContentPage
     {
+        int i = 0;
         public MainPage()
         {
             InitializeComponent();
+            App.SetResourceColors(i);
+            Button1.Clicked += Button1_Clicked;
+        }
+
+        private void Button1_Clicked(object sender, EventArgs e)
+        {
+            i++;
+            App.SetResourceColors(i % 2);
         }
     }
 }

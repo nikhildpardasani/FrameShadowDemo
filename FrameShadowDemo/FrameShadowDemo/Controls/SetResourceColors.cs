@@ -6,9 +6,9 @@ namespace FrameShadowDemo
     public partial class App : Application
     {
 
-        public static void SetResourceColors()
+        public static void SetResourceColors(int value = 0)
         {
-            var thc = 0;
+            var thc = value;
 
             // Lines
             Current.Resources["LineColor"]              = Styles.LineColor[thc];

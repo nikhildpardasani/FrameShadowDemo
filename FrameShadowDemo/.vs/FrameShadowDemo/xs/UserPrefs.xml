@@ -1,15 +1,21 @@
 ﻿<Properties StartupConfiguration="{393F09E6-A3BE-4199-B7F7-E5E6E91144FB}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="FrameShadowDemo/MainPage.xaml">
+  <MonoDevelop.Ide.Workbench ActiveDocument="FrameShadowDemo/Controls/SetResourceColors.cs">
     <Files>
-      <File FileName="FrameShadowDemo/MainPage.xaml" Line="9" Column="29" />
-      <File FileName="FrameShadowDemo.iOS/CustomFrameRenderer.cs" />
+      <File FileName="FrameShadowDemo/MainPage.xaml" Line="19" Column="60" />
+      <File FileName="FrameShadowDemo/MainPage.xaml.cs" Line="19" Column="37" />
+      <File FileName="FrameShadowDemo/Controls/FrameBorder.cs" Line="16" Column="1" />
+      <File FileName="FrameShadowDemo/Controls/WordFrame.cs" Line="16" Column="1" />
+      <File FileName="FrameShadowDemo/Controls/SetResourceColors.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="FrameShadowDemo" expanded="True">
             <Node name="FrameShadowDemo" expanded="True">
-              <Node name="MainPage.xaml" expanded="True" selected="True" />
+              <Node name="Controls" expanded="True">
+                <Node name="SetResourceColors.cs" selected="True" />
+              </Node>
+              <Node name="MainPage.xaml" expanded="True" />
             </Node>
             <Node name="FrameShadowDemo.iOS" expanded="True" />
           </Node>
