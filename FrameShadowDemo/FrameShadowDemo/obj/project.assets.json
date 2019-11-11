@@ -26,6 +26,18 @@
           "build/netstandard2.0/NETStandard.Library.targets": {}
         }
       },
+      "Refractored.MvvmHelpers/1.5.1-beta": {
+        "type": "package",
+        "dependencies": {
+          "System.ValueTuple": "4.5.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/MvvmHelpers.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/MvvmHelpers.dll": {}
+        }
+      },
       "System.Numerics.Vectors/4.5.0": {
         "type": "package",
         "compile": {
@@ -33,6 +45,15 @@
         },
         "runtime": {
           "lib/netstandard2.0/System.Numerics.Vectors.dll": {}
+        }
+      },
+      "System.ValueTuple/4.5.0": {
+        "type": "package",
+        "compile": {
+          "ref/netstandard2.0/_._": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/_._": {}
         }
       },
       "Xamarin.Essentials/1.3.1": {
@@ -47,7 +68,7 @@
           "lib/netstandard2.0/Xamarin.Essentials.dll": {}
         }
       },
-      "Xamarin.Forms/4.2.0.815419": {
+      "Xamarin.Forms/4.3.0.947036": {
         "type": "package",
         "compile": {
           "lib/netstandard2.0/Xamarin.Forms.Core.dll": {},
@@ -210,6 +231,26 @@
         "netstandard.library.nuspec"
       ]
     },
+    "Refractored.MvvmHelpers/1.5.1-beta": {
+      "sha512": "JIozNkWWAGeRRelOo3h9zTKvSbC44I6PAw0/bMV7dSgaWRjusRl8qHCle6bTG+UTg0ZMI8mTpUA2aTrjDTpmog==",
+      "type": "package",
+      "path": "refractored.mvvmhelpers/1.5.1-beta",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net461/MvvmHelpers.dll",
+        "lib/net461/MvvmHelpers.pdb",
+        "lib/net461/MvvmHelpers.xml",
+        "lib/netstandard1.0/MvvmHelpers.dll",
+        "lib/netstandard1.0/MvvmHelpers.pdb",
+        "lib/netstandard1.0/MvvmHelpers.xml",
+        "lib/netstandard2.0/MvvmHelpers.dll",
+        "lib/netstandard2.0/MvvmHelpers.pdb",
+        "lib/netstandard2.0/MvvmHelpers.xml",
+        "refractored.mvvmhelpers.1.5.1-beta.nupkg.sha512",
+        "refractored.mvvmhelpers.nuspec"
+      ]
+    },
     "System.Numerics.Vectors/4.5.0": {
       "sha512": "QQTlPTl06J/iiDbJCiepZ4H//BVraReU4O4EoRw1U02H5TLUIT7xn3GnDp9AXPSlJUDyFs4uWjWafNX6WrAojQ==",
       "type": "package",
@@ -253,6 +294,50 @@
         "ref/xamarinwatchos10/_._",
         "system.numerics.vectors.4.5.0.nupkg.sha512",
         "system.numerics.vectors.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "System.ValueTuple/4.5.0": {
+      "sha512": "okurQJO6NRE/apDIP23ajJ0hpiNmJ+f0BwOlB/cSqTLQlw5upkf+5+96+iG2Jw40G1fCVCyPz/FhIABUjMR+RQ==",
+      "type": "package",
+      "path": "system.valuetuple/4.5.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/MonoAndroid10/_._",
+        "lib/MonoTouch10/_._",
+        "lib/net461/System.ValueTuple.dll",
+        "lib/net461/System.ValueTuple.xml",
+        "lib/net47/System.ValueTuple.dll",
+        "lib/net47/System.ValueTuple.xml",
+        "lib/netcoreapp2.0/_._",
+        "lib/netstandard1.0/System.ValueTuple.dll",
+        "lib/netstandard1.0/System.ValueTuple.xml",
+        "lib/netstandard2.0/_._",
+        "lib/portable-net40+sl4+win8+wp8/System.ValueTuple.dll",
+        "lib/portable-net40+sl4+win8+wp8/System.ValueTuple.xml",
+        "lib/uap10.0.16299/_._",
+        "lib/xamarinios10/_._",
+        "lib/xamarinmac20/_._",
+        "lib/xamarintvos10/_._",
+        "lib/xamarinwatchos10/_._",
+        "ref/MonoAndroid10/_._",
+        "ref/MonoTouch10/_._",
+        "ref/net461/System.ValueTuple.dll",
+        "ref/net47/System.ValueTuple.dll",
+        "ref/netcoreapp2.0/_._",
+        "ref/netstandard2.0/_._",
+        "ref/portable-net40+sl4+win8+wp8/System.ValueTuple.dll",
+        "ref/uap10.0.16299/_._",
+        "ref/xamarinios10/_._",
+        "ref/xamarinmac20/_._",
+        "ref/xamarintvos10/_._",
+        "ref/xamarinwatchos10/_._",
+        "system.valuetuple.4.5.0.nupkg.sha512",
+        "system.valuetuple.nuspec",
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
@@ -309,10 +394,10 @@
         "xamarin.essentials.nuspec"
       ]
     },
-    "Xamarin.Forms/4.2.0.815419": {
-      "sha512": "GrKE8TBjR5chew92HBcoaTuqwo6Jnpp0djVaN4/wtGQW/URZAt3Eb3zF8rQ6jRA2WKuTKm3wyPTCPrB2PekIfQ==",
+    "Xamarin.Forms/4.3.0.947036": {
+      "sha512": "oEAwwHfaZesC+VvP07UoctI1DGIgewZlKMr/sHPl/hNMRM6ZfccPgOY19Yw017asj9z7PKXqpDDUbFFOJ2jN4A==",
       "type": "package",
-      "path": "xamarin.forms/4.2.0.815419",
+      "path": "xamarin.forms/4.3.0.947036",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -540,9 +625,11 @@
         "lib/uap10.0/Xamarin.Forms.Platform.UAP/FormsProgressBarStyle.xbf",
         "lib/uap10.0/Xamarin.Forms.Platform.UAP/FormsTextBoxStyle.xbf",
         "lib/uap10.0/Xamarin.Forms.Platform.UAP/MasterDetailControlStyle.xbf",
+        "lib/uap10.0/Xamarin.Forms.Platform.UAP/Microsoft.UI.Xaml/DensityStyles/Compact.xbf",
         "lib/uap10.0/Xamarin.Forms.Platform.UAP/PageControlStyle.xbf",
         "lib/uap10.0/Xamarin.Forms.Platform.UAP/Properties/Xamarin.Forms.Platform.UAP.rd.xml",
         "lib/uap10.0/Xamarin.Forms.Platform.UAP/Resources.xbf",
+        "lib/uap10.0/Xamarin.Forms.Platform.UAP/Shell/ShellStyles.xbf",
         "lib/uap10.0/Xamarin.Forms.Platform.UAP/SliderStyle.xbf",
         "lib/uap10.0/Xamarin.Forms.Platform.UAP/StepperControl.xbf",
         "lib/uap10.0/Xamarin.Forms.Platform.UAP/TabbedPageStyle.xbf",
@@ -551,7 +638,7 @@
         "lib/uap10.0/Xamarin.Forms.Xaml.dll",
         "lib/uap10.0/Xamarin.Forms.Xaml.pdb",
         "lib/uap10.0/Xamarin.Forms.Xaml.xml",
-        "xamarin.forms.4.2.0.815419.nupkg.sha512",
+        "xamarin.forms.4.3.0.947036.nupkg.sha512",
         "xamarin.forms.nuspec"
       ]
     }
@@ -559,28 +646,29 @@
   "projectFileDependencyGroups": {
     ".NETStandard,Version=v2.0": [
       "NETStandard.Library >= 2.0.3",
+      "Refractored.MvvmHelpers >= 1.5.1-beta",
       "Xamarin.Essentials >= 1.3.1",
-      "Xamarin.Forms >= 4.2.0.815419"
+      "Xamarin.Forms >= 4.3.0.947036"
     ]
   },
   "packageFolders": {
-    "/Users/nikhil/.nuget/packages/": {},
+    "/Users/nikhilpardasani/.nuget/packages/": {},
     "/usr/local/share/dotnet/sdk/NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/nikhil/Documents/FrameShadowDemo/FrameShadowDemo/FrameShadowDemo/FrameShadowDemo/FrameShadowDemo.csproj",
+      "projectUniqueName": "/Users/nikhilpardasani/Documents/OutSource/FrameShadowDemo/FrameShadowDemo/FrameShadowDemo/FrameShadowDemo.csproj",
       "projectName": "FrameShadowDemo",
-      "projectPath": "/Users/nikhil/Documents/FrameShadowDemo/FrameShadowDemo/FrameShadowDemo/FrameShadowDemo/FrameShadowDemo.csproj",
-      "packagesPath": "/Users/nikhil/.nuget/packages/",
-      "outputPath": "/Users/nikhil/Documents/FrameShadowDemo/FrameShadowDemo/FrameShadowDemo/FrameShadowDemo/obj/",
+      "projectPath": "/Users/nikhilpardasani/Documents/OutSource/FrameShadowDemo/FrameShadowDemo/FrameShadowDemo/FrameShadowDemo.csproj",
+      "packagesPath": "/Users/nikhilpardasani/.nuget/packages/",
+      "outputPath": "/Users/nikhilpardasani/Documents/OutSource/FrameShadowDemo/FrameShadowDemo/FrameShadowDemo/obj/",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "/Users/nikhil/.config/NuGet/NuGet.Config"
+        "/Users/nikhilpardasani/.config/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netstandard2.0"
@@ -608,13 +696,17 @@
             "version": "[2.0.3, )",
             "autoReferenced": true
           },
+          "Refractored.MvvmHelpers": {
+            "target": "Package",
+            "version": "[1.5.1-beta, )"
+          },
           "Xamarin.Essentials": {
             "target": "Package",
             "version": "[1.3.1, )"
           },
           "Xamarin.Forms": {
             "target": "Package",
-            "version": "[4.2.0.815419, )"
+            "version": "[4.3.0.947036, )"
           }
         },
         "imports": [

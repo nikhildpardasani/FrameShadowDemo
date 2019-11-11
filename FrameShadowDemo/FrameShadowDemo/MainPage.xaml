@@ -9,7 +9,7 @@
              x:Class="FrameShadowDemo.MainPage">
     <StackLayout Spacing="10"
                  Padding="0,30">
-        <Button x:Name="Button1"
+        <Button x:Name="Button1" ClassId="ABC132"
                 Text="Click here to change Theme" />
 
         <t:FrameBorder />

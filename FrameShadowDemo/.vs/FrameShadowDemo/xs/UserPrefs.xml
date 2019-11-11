@@ -1,10 +1,30 @@
-﻿<Properties StartupConfiguration="{393F09E6-A3BE-4199-B7F7-E5E6E91144FB}|Default">
-  <MonoDevelop.Ide.Workbench>
+﻿<Properties StartupConfiguration="{393F09E6-A3BE-4199-B7F7-E5E6E91144FB}|Default" NuGet.AddPackagesDialog.IncludePrerelease="True">
+  <MonoDevelop.Ide.Workbench ActiveDocument="FrameShadowDemo/Controls/SpacerTemplate.cs">
+    <Files>
+      <File FileName="FrameShadowDemo/Page1.xaml" Line="7" Column="9" />
+      <File FileName="FrameShadowDemo/Page1.xaml.cs" Line="6" Column="26" />
+      <File FileName="FrameShadowDemo/CardListPage.xaml" Line="66" Column="21" />
+      <File FileName="FrameShadowDemo/CardListPage.xaml.cs" Line="34" Column="15" />
+      <File FileName="FrameShadowDemo/Controls/Base.cs" Line="80" Column="16" />
+      <File FileName="FrameShadowDemo/Controls/CardGridTemplate.xaml" Line="71" Column="1" />
+      <File FileName="FrameShadowDemo/Controls/CardGridTemplate.xaml.cs" Line="5" Column="26" />
+      <File FileName="FrameShadowDemo/Controls/GButton.cs" Line="5" Column="26" />
+      <File FileName="FrameShadowDemo/Controls/GridLabelInfo.cs" Line="6" Column="26" />
+      <File FileName="FrameShadowDemo/Controls/GridLabelLink.cs" Line="6" Column="26" />
+      <File FileName="FrameShadowDemo/Controls/GridLabelText.cs" Line="3" Column="26" />
+      <File FileName="FrameShadowDemo/Controls/SpacerTemplate.cs" Line="6" Column="26" />
+    </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="FrameShadowDemo" expanded="True">
-            <Node name="FrameShadowDemo" expanded="True" />
+            <Node name="FrameShadowDemo" expanded="True">
+              <Node name="Dependencies" expanded="True" />
+              <Node name="Controls" expanded="True">
+                <Node name="SpacerTemplate.cs" selected="True" />
+              </Node>
+              <Node name="Pages" expanded="True" />
+            </Node>
           </Node>
         </State>
       </Pad>

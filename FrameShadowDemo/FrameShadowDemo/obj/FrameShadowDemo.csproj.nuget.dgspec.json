@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "/Users/nikhil/Documents/FrameShadowDemo/FrameShadowDemo/FrameShadowDemo/FrameShadowDemo/FrameShadowDemo.csproj": {}
+    "/Users/nikhilpardasani/Documents/OutSource/FrameShadowDemo/FrameShadowDemo/FrameShadowDemo/FrameShadowDemo.csproj": {}
   },
   "projects": {
-    "/Users/nikhil/Documents/FrameShadowDemo/FrameShadowDemo/FrameShadowDemo/FrameShadowDemo/FrameShadowDemo.csproj": {
+    "/Users/nikhilpardasani/Documents/OutSource/FrameShadowDemo/FrameShadowDemo/FrameShadowDemo/FrameShadowDemo.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/nikhil/Documents/FrameShadowDemo/FrameShadowDemo/FrameShadowDemo/FrameShadowDemo/FrameShadowDemo.csproj",
+        "projectUniqueName": "/Users/nikhilpardasani/Documents/OutSource/FrameShadowDemo/FrameShadowDemo/FrameShadowDemo/FrameShadowDemo.csproj",
         "projectName": "FrameShadowDemo",
-        "projectPath": "/Users/nikhil/Documents/FrameShadowDemo/FrameShadowDemo/FrameShadowDemo/FrameShadowDemo/FrameShadowDemo.csproj",
-        "packagesPath": "/Users/nikhil/.nuget/packages/",
-        "outputPath": "/Users/nikhil/Documents/FrameShadowDemo/FrameShadowDemo/FrameShadowDemo/FrameShadowDemo/obj/",
+        "projectPath": "/Users/nikhilpardasani/Documents/OutSource/FrameShadowDemo/FrameShadowDemo/FrameShadowDemo/FrameShadowDemo.csproj",
+        "packagesPath": "/Users/nikhilpardasani/.nuget/packages/",
+        "outputPath": "/Users/nikhilpardasani/Documents/OutSource/FrameShadowDemo/FrameShadowDemo/FrameShadowDemo/obj/",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "/Users/nikhil/.config/NuGet/NuGet.Config"
+          "/Users/nikhilpardasani/.config/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netstandard2.0"
@@ -45,13 +45,17 @@
               "version": "[2.0.3, )",
               "autoReferenced": true
             },
+            "Refractored.MvvmHelpers": {
+              "target": "Package",
+              "version": "[1.5.1-beta, )"
+            },
             "Xamarin.Essentials": {
               "target": "Package",
               "version": "[1.3.1, )"
             },
             "Xamarin.Forms": {
               "target": "Package",
-              "version": "[4.2.0.815419, )"
+              "version": "[4.3.0.947036, )"
             }
           },
           "imports": [

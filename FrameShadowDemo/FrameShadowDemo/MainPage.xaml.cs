@@ -24,6 +24,8 @@ namespace FrameShadowDemo
         private void Button1_Clicked(object sender, EventArgs e)
         {
             i++;
+            
+            var ID = (sender as Button).ClassId;
             App.SetResourceColors(i % 2);
         }
     }
