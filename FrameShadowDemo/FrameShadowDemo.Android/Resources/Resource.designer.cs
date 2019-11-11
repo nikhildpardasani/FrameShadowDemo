@@ -8467,9 +8467,6 @@ namespace FrameShadowDemo.Droid
 			// aapt resource value: 0x7F0E00C5
 			public const int CardView_Light = 2131624133;
 			
-			// aapt resource value: 0x7F0E0202
-			public const int collectionViewStyle = 2131624450;
-			
 			// aapt resource value: 0x7F0E00C6
 			public const int MainTheme = 2131624134;
 			

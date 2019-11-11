@@ -1,0 +1,123 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<t:BaseGridTemplate xmlns="http://xamarin.com/schemas/2014/forms"
+                    xmlns:t="clr-namespace:FrameShadowDemo"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                    x:Class="FrameShadowDemo.CardGridTemplate"
+                    x:Name="this">
+    <t:LineTemplate />
+
+    <BoxView HeightRequest="10" />
+
+    <Grid Padding="{DynamicResource GridGridPadding}"
+          VerticalOptions="CenterAndExpand">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="55" />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+        <t:GridLabelText VerticalOptions="Start"
+                         Grid.Column="0"
+                         Grid.Row="0"
+                         Text="{Binding Row,  Source={x:Reference this}}"
+                         HorizontalTextAlignment="Start" />
+        <t:GridLabelText VerticalOptions="Start"
+                         Grid.Column="1"
+                         Grid.Row="0"
+                         Text="{Binding Text1,  Source={x:Reference this}}" />
+    </Grid>
+
+    <Grid Padding="{DynamicResource GridGridPadding}"
+          VerticalOptions="CenterAndExpand">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="55" />
+            <ColumnDefinition />
+            <ColumnDefinition Width="Auto" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+        <t:GridLabelText VerticalOptions="Center"
+                         Grid.Column="1"
+                         Grid.Row="1"
+                         Text="{Binding Text2,  Source={x:Reference this}}" />
+        <t:GridLabelText VerticalOptions="Center"
+                         Grid.Column="1"
+                         Grid.Row="2"
+                         Text="{Binding Text3,  Source={x:Reference this}}" />
+        <t:GridLabelText VerticalOptions="Center"
+                         Grid.Column="1"
+                         Grid.Row="3"
+                         Text="{Binding Text4,  Source={x:Reference this}}" />
+        <Grid Grid.Column="2"
+              Grid.Row="0"
+              Grid.RowSpan="4"
+              VerticalOptions="Center"
+              Margin="10,10,0,0"
+              RowSpacing="10"
+              ColumnSpacing="10">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="Auto" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+
+            <t:GButton WidthRequest="45"
+                       VerticalOptions="Center"
+                       Grid.Column="0"
+                       Grid.Row="0"
+                       State="{Binding HState,  Source={x:Reference this}}"
+                       Command="{Binding TapHCommand, Source={x:Reference this}}"
+                       CommandParameter="{Binding PhraseId, Source={x:Reference this}}"
+                       Text="{Binding HText, Source={x:Reference this}}" />
+            <t:GButton WidthRequest="45"
+                       VerticalOptions="Center"
+                       Grid.Column="1"
+                       Grid.Row="0"
+                       State="{Binding F1State, Source={x:Reference this}}"
+                       Command="{Binding TapF1Command, Source={x:Reference this}}"
+                       CommandParameter="{Binding PhraseId, Source={x:Reference this}}"
+                       Text="{Binding F1Text, Source={x:Reference this}}" />
+            <t:GButton WidthRequest="45"
+                       VerticalOptions="Center"
+                       Grid.Column="2"
+                       Grid.Row="0"
+                       State="{Binding F2State, Source={x:Reference this}}"
+                       Command="{Binding TapF2Command, Source={x:Reference this}}"
+                       CommandParameter="{Binding PhraseId, Source={x:Reference this}}"
+                       Text="{Binding F2Text, Source={x:Reference this}}" />
+            <t:GButton WidthRequest="45"
+                       VerticalOptions="Center"
+                       Grid.Column="0"
+                       Grid.Row="1"
+                       State="{Binding F3State, Source={x:Reference this}}"
+                       Command="{Binding TapF3Command, Source={x:Reference this}}"
+                       CommandParameter="{Binding PhraseId, Source={x:Reference this}}"
+                       Text="{Binding F3Text, Source={x:Reference this}}" />
+            <t:GButton WidthRequest="45"
+                       VerticalOptions="Center"
+                       Grid.Column="1"
+                       Grid.Row="1"
+                       State="{Binding F4State, Source={x:Reference this}}"
+                       Command="{Binding TapF4Command, Source={x:Reference this}}"
+                       CommandParameter="{Binding PhraseId, Source={x:Reference this}}"
+                       Text="{Binding F4Text, Source={x:Reference this}}" />
+            <t:GButton WidthRequest="45"
+                       VerticalOptions="Center"
+                       Grid.Column="2"
+                       Grid.Row="1"
+                       State="{Binding F5State, Source={x:Reference this}}"
+                       Command="{Binding TapF5Command, Source={x:Reference this}}"
+                       CommandParameter="{Binding PhraseId, Source={x:Reference this}}"
+                       Text="{Binding F5Text, Source={x:Reference this}}" />
+        </Grid>
+    </Grid>
+    <BoxView HeightRequest="10" />
+</t:BaseGridTemplate>

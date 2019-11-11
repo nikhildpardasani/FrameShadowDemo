@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<t:BackArrowScrollableView xmlns="http://xamarin.com/schemas/2014/forms"
+                           xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                           xmlns:local="clr-namespace:FrameShadowDemo;assembly=FrameShadowDemo"
+                           xmlns:t="clr-namespace:FrameShadowDemo"
+                           x:Class="FrameShadowDemo.CardListPage"
+                           x:Name="ThisPage"
+                           BackgroundColor="{DynamicResource PageBackgroundColor}">
+        <StackLayout Spacing="0"
+                     VerticalOptions="FillAndExpand">
+            <StackLayout x:Name="details"
+                         VerticalOptions="FillAndExpand"
+                         Orientation="Vertical"
+                         Spacing="0"
+                         Margin="0">
+                <t:FrameBorder>
+                    <t:Stack>
+                        <t:HeaderTemplate Text="{Binding IntroTitle}" />
+                        <t:LineTemplate />
+                        <t:InfoTemplate Text="{Binding IntroFooter}" />
+                    </t:Stack>
+                </t:FrameBorder>
+                <t:FrameBorder>
+                    <t:Stack>
+                        <t:HeaderTemplate Text="{Binding SectionTitle}" />
+                        <t:LineTemplate />
+                        <t:InfoTemplate Text="{Binding SectionFooter}" />
+                        <t:LineTemplate  IsVisible="{Binding MessageGridVisible}" />
+                        <StackLayout Orientation="Vertical"
+                                     Spacing="0"
+                                     BindableLayout.ItemsSource="{Binding Phrases}">
+                            <BindableLayout.ItemTemplate>
+                                <DataTemplate>
+                                    <t:CardGridTemplate Text1="{Binding English}"
+                                                        Text2="{Binding Kana}"
+                                                        Text3="{Binding Kanji}"
+                                                        Text4="{Binding Romaji}"
+                                                        HText="H"
+                                                        F1Text="1"
+                                                        F2Text="2"
+                                                        F3Text="3"
+                                                        F4Text="4"
+                                                        F5Text="5"
+                                                        Separator="true"
+                                                        PhraseId="{Binding PhraseId}"
+                                                        Row="{Binding PhraseNum, Converter={StaticResource AddHashToNumberConverter}}"
+                                                        TapHCommand="{Binding Path=BindingContext.HBtnCmd, Source={x:Reference Name=ThisPage}}"
+                                                        TapF1Command="{Binding Path=BindingContext.F1BtnCmd, Source={x:Reference Name=ThisPage}}"
+                                                        TapF2Command="{Binding Path=BindingContext.F2BtnCmd, Source={x:Reference Name=ThisPage}}"
+                                                        TapF3Command="{Binding Path=BindingContext.F3BtnCmd, Source={x:Reference Name=ThisPage}}"
+                                                        TapF4Command="{Binding Path=BindingContext.F4BtnCmd, Source={x:Reference Name=ThisPage}}"
+                                                        TapF5Command="{Binding Path=BindingContext.F5BtnCmd, Source={x:Reference Name=ThisPage}}"
+                                                        HState="{Binding Hidden, Converter={StaticResource BoolToStringStateConverter}}"
+                                                        F1State="{Binding F1, Converter={StaticResource BoolToStringStateConverter}}"
+                                                        F2State="{Binding F2, Converter={StaticResource BoolToStringStateConverter}}"
+                                                        F3State="{Binding F3, Converter={StaticResource BoolToStringStateConverter}}"
+                                                        F4State="{Binding F4, Converter={StaticResource BoolToStringStateConverter}}"
+                                                        F5State="{Binding F5, Converter={StaticResource BoolToStringStateConverter}}"
+                                                        TapCommandParam="{Binding .}" />
+                                </DataTemplate>
+                            </BindableLayout.ItemTemplate>
+                        </StackLayout>
+                    </t:Stack>
+                </t:FrameBorder>
+            </StackLayout>
+            <t:SpacerTemplate />
+        </StackLayout>
+</t:BackArrowScrollableView >
