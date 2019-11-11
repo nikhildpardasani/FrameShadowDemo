@@ -1,10 +1,10 @@
-FrameShadowDemo/.vs/
-FrameShadowDemo/bin/
-FrameShadowDemo/obj/
-FrameShadowDemo/FrameShadowDemo.Android/obj/
-FrameShadowDemo/FrameShadowDemo.Android/bin/
-FrameShadowDemo/FrameShadowDemo.iOS/bin/
-FrameShadowDemo/FrameShadowDemo.iOS/obj/
+FrameShadowDemo/.vs/**
+FrameShadowDemo/bin/**
+FrameShadowDemo/obj/**
+FrameShadowDemo/FrameShadowDemo.Android/obj/**
+FrameShadowDemo/FrameShadowDemo.Android/bin/**
+FrameShadowDemo/FrameShadowDemo.iOS/bin/**
+FrameShadowDemo/FrameShadowDemo.iOS/obj/**
 FrameShadowDemo/.vs/FrameShadowDemo/xs/project-cache/FrameShadowDemo-Debug.json
 FrameShadowDemo/.vs/FrameShadowDemo/xs/project-cache/FrameShadowDemo-Debug.json
 FrameShadowDemo/.vs/FrameShadowDemo/xs/project-cache/FrameShadowDemo-Debug.json
@@ -458,3 +458,8 @@ FrameShadowDemo/FrameShadowDemo.iOS/obj/FrameShadowDemo.iOS.csproj.nuget.dgspec.
 FrameShadowDemo/FrameShadowDemo.iOS/obj/FrameShadowDemo.iOS.csproj.nuget.g.props
 FrameShadowDemo/FrameShadowDemo.iOS/obj/FrameShadowDemo.iOS.csproj.nuget.g.targets
 FrameShadowDemo/FrameShadowDemo.iOS/obj/iPhoneSimulator/Debug/FrameShadowDemo.iOS.csprojAssemblyReference.cache
+FrameShadowDemo/FrameShadowDemo/obj/FrameShadowDemo.csproj.nuget.g.targets
+FrameShadowDemo/FrameShadowDemo/obj/FrameShadowDemo.csproj.nuget.g.props
+FrameShadowDemo/FrameShadowDemo/obj/FrameShadowDemo.csproj.nuget.dgspec.json
+FrameShadowDemo/FrameShadowDemo/obj/FrameShadowDemo.csproj.nuget.cache
+FrameShadowDemo/FrameShadowDemo/obj/Debug/netstandard2.0/FrameShadowDemo.csprojAssemblyReference.cache
