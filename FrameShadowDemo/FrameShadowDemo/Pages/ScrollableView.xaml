@@ -1,0 +1,31 @@
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:t="clr-namespace:FrameShadowDemo"
+             x:Class="FrameShadowDemo.ScrollableView"
+             BackgroundColor="{DynamicResource PageBackgroundColor}"
+             Shell.NavBarIsVisible="false"
+             x:Name="ContentPage"
+             xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
+             ios:Page.UseSafeArea="true">
+    <ContentPage.Content>
+        <t:Stack Orientation="Vertical">
+            <StackLayout HeightRequest="{DynamicResource PageMarginNew}"/>
+            <Grid>
+                <ScrollView x:Name="scroll">
+                    <ContentView Content="{Binding Source={x:Reference ContentPage}, Path=InnerContent}" />
+                </ScrollView>
+                <t:FrameBorder IsVisible="{Binding IsBusy}"
+                               VerticalOptions="Center"
+                               HorizontalOptions="Center"
+                               CornerRadius="10">
+                    <ActivityIndicator IsRunning="{Binding IsBusy}"
+                                       Color="{DynamicResource LabelTextColor}"
+                                       VerticalOptions="Center"
+                                       HorizontalOptions="Center"
+                                       HeightRequest="100"
+                                       WidthRequest="100" />
+                </t:FrameBorder>
+            </Grid>
+        </t:Stack>
+    </ContentPage.Content>
+</ContentPage>

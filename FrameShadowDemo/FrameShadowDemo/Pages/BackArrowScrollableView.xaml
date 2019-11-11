@@ -1,0 +1,110 @@
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:t="clr-namespace:FrameShadowDemo"
+             x:Class="FrameShadowDemo.BackArrowScrollableView"
+             BackgroundColor="{DynamicResource PageBackgroundColor}"
+             Shell.NavBarIsVisible="false"
+             x:Name="ContentPage"
+             xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
+             ios:Page.UseSafeArea="true">
+    <ContentPage.Content>
+        <Grid>
+            <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+            <Grid MinimumHeightRequest="50"
+                  Padding="15,0,15,0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <Grid Grid.Column="0"
+                      Padding="5,0">
+                    <Grid.GestureRecognizers>
+                        <TapGestureRecognizer x:Name="tap" />
+                    </Grid.GestureRecognizers>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto" />
+                        <ColumnDefinition Width="Auto" />
+                    </Grid.ColumnDefinitions>
+                    <Label Grid.Column="0"
+                           FontSize="{DynamicResource BackArrowFontSize}"
+                           HeightRequest="50"
+                           Text="&#xF053;"
+                           TextColor="{DynamicResource LabelLinkColor}"
+                           VerticalOptions="CenterAndExpand"
+                           VerticalTextAlignment="Center"
+                           HorizontalTextAlignment="Start">
+                        <Label.FontFamily>
+                            <OnPlatform x:TypeArguments="x:String"
+                                        Android="Font Awesome 5 Pro-Regular-400.otf#FontAwesome5ProRegular"
+                                        iOS="Font Awesome 5 Pro" />
+                        </Label.FontFamily>
+                    </Label>
+                    <Label FontSize="{DynamicResource PageTitleFontSize}"
+                           Grid.Column="1"
+                           Text="{Binding Source={x:Reference ContentPage}, Path=BackPageTitle}"
+                           TextColor="{DynamicResource PageTitleTextColor }"
+                           VerticalOptions="CenterAndExpand"
+                           VerticalTextAlignment="Center"
+                           HorizontalTextAlignment="Start" />
+                </Grid>
+
+                <Label FontAttributes="Bold"
+                       FontSize="{DynamicResource PageTitleFontSize}"
+                       HeightRequest="50"
+                       Grid.Column="1"
+                       Text="{Binding Source={x:Reference ContentPage}, Path=PageTitle}"
+                       TextColor="{DynamicResource PageTitleTextColor }"
+                       VerticalOptions="CenterAndExpand"
+                       VerticalTextAlignment="Center" />
+
+                <Grid Grid.Column="2"
+                      Padding="5,0">
+                    <Label Grid.Column="0"
+                           FontSize="{DynamicResource BackArrowFontSize}"
+                           FontFamily="SemiBoldFont"
+                           HeightRequest="50"
+                           Text="&#xF053;"
+                           TextColor="{DynamicResource PageBackgroundColor}"
+                           VerticalOptions="CenterAndExpand"
+                           VerticalTextAlignment="Center"
+                           HorizontalTextAlignment="Start">
+                        <Label.FontFamily>
+                            <OnPlatform x:TypeArguments="x:String"
+                                        Android="Font Awesome 5 Pro-Regular-400.otf#FontAwesome5ProRegular"
+                                        iOS="FontAwesome5Pro-Regular" />
+                        </Label.FontFamily>
+                    </Label>
+                    <Label FontAttributes="Bold"
+                           FontSize="{DynamicResource PageTitleFontSize}"
+                           Grid.Column="1"
+                           Text="{Binding Source={x:Reference ContentPage}, Path=BackPageTitle}"
+                           TextColor="{DynamicResource PageBackgroundColor}"
+                           VerticalOptions="CenterAndExpand"
+                           VerticalTextAlignment="Center"
+                           HorizontalTextAlignment="Start" />
+                </Grid>
+
+            </Grid>
+            <Grid Grid.Row="1">
+                <ScrollView x:Name="scroll">
+                    <ContentView Content="{Binding Source={x:Reference ContentPage}, Path=InnerContent}" />
+                </ScrollView>
+                <t:FrameBorder IsVisible="{Binding IsBusy}"
+                               VerticalOptions="Center"
+                               HorizontalOptions="Center"
+                               CornerRadius="10">
+                    <ActivityIndicator IsRunning="{Binding IsBusy}"
+                                       Color="{DynamicResource LabelTextColor}"
+                                       VerticalOptions="Center"
+                                       HorizontalOptions="Center"
+                                       HeightRequest="100"
+                                       WidthRequest="100" />
+                </t:FrameBorder>
+            </Grid>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,33 +1,18 @@
 ﻿<Properties StartupConfiguration="{393F09E6-A3BE-4199-B7F7-E5E6E91144FB}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="FrameShadowDemo/MainPage.xaml">
-    <Files>
-      <File FileName="FrameShadowDemo/MainPage.xaml" Line="14" Column="9" />
-      <File FileName="FrameShadowDemo/MainPage.xaml.cs" Line="26" Column="17" />
-      <File FileName="FrameShadowDemo/Controls/FrameBorder.cs" Line="16" Column="64" />
-      <File FileName="FrameShadowDemo/Controls/WordFrame.cs" Line="11" Column="1" />
-      <File FileName="FrameShadowDemo/Controls/SetResourceColors.cs" Line="9" Column="59" />
-    </Files>
+  <MonoDevelop.Ide.Workbench>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="FrameShadowDemo" expanded="True">
-            <Node name="FrameShadowDemo" expanded="True">
-              <Node name="Dependencies" expanded="True">
-                <Node name="PackageDependencies" expanded="True" />
-              </Node>
-              <Node name="Controls" expanded="True" />
-              <Node name="MainPage.xaml" expanded="True" selected="True" />
-            </Node>
-            <Node name="FrameShadowDemo.iOS" expanded="True" />
+            <Node name="FrameShadowDemo" expanded="True" />
           </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.ItemProperties.FrameShadowDemo.Android FirstBuild="True" PreferredExecutionTarget="Android.Android_Accelerated_Oreo" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.FrameShadowDemo.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.DAB05670-B10E-4E1C-8D55-A9F5BF7B77A9" />
+  <MonoDevelop.Ide.ItemProperties.FrameShadowDemo.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.BEB6DA83-1054-4B42-A854-1CC75DEE3990" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

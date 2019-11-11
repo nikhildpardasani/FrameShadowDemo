@@ -26,7 +26,7 @@
           "lib/xamarinios10/Xamarin.Essentials.dll": {}
         }
       },
-      "Xamarin.Forms/4.2.0.815419": {
+      "Xamarin.Forms/4.3.0.947036": {
         "type": "package",
         "compile": {
           "lib/Xamarin.iOS10/Xamarin.Forms.Core.dll": {},
@@ -154,7 +154,7 @@
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
           "Xamarin.Essentials": "1.3.1",
-          "Xamarin.Forms": "4.2.0.815419"
+          "Xamarin.Forms": "4.3.0.947036"
         },
         "compile": {
           "bin/placeholder/FrameShadowDemo.dll": {}
@@ -189,7 +189,7 @@
           "lib/xamarinios10/Xamarin.Essentials.dll": {}
         }
       },
-      "Xamarin.Forms/4.2.0.815419": {
+      "Xamarin.Forms/4.3.0.947036": {
         "type": "package",
         "compile": {
           "lib/Xamarin.iOS10/Xamarin.Forms.Core.dll": {},
@@ -317,7 +317,7 @@
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
           "Xamarin.Essentials": "1.3.1",
-          "Xamarin.Forms": "4.2.0.815419"
+          "Xamarin.Forms": "4.3.0.947036"
         },
         "compile": {
           "bin/placeholder/FrameShadowDemo.dll": {}
@@ -352,7 +352,7 @@
           "lib/xamarinios10/Xamarin.Essentials.dll": {}
         }
       },
-      "Xamarin.Forms/4.2.0.815419": {
+      "Xamarin.Forms/4.3.0.947036": {
         "type": "package",
         "compile": {
           "lib/Xamarin.iOS10/Xamarin.Forms.Core.dll": {},
@@ -480,7 +480,7 @@
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
           "Xamarin.Essentials": "1.3.1",
-          "Xamarin.Forms": "4.2.0.815419"
+          "Xamarin.Forms": "4.3.0.947036"
         },
         "compile": {
           "bin/placeholder/FrameShadowDemo.dll": {}
@@ -515,7 +515,7 @@
           "lib/xamarinios10/Xamarin.Essentials.dll": {}
         }
       },
-      "Xamarin.Forms/4.2.0.815419": {
+      "Xamarin.Forms/4.3.0.947036": {
         "type": "package",
         "compile": {
           "lib/Xamarin.iOS10/Xamarin.Forms.Core.dll": {},
@@ -643,7 +643,7 @@
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
           "Xamarin.Essentials": "1.3.1",
-          "Xamarin.Forms": "4.2.0.815419"
+          "Xamarin.Forms": "4.3.0.947036"
         },
         "compile": {
           "bin/placeholder/FrameShadowDemo.dll": {}
@@ -754,10 +754,10 @@
         "xamarin.essentials.nuspec"
       ]
     },
-    "Xamarin.Forms/4.2.0.815419": {
-      "sha512": "GrKE8TBjR5chew92HBcoaTuqwo6Jnpp0djVaN4/wtGQW/URZAt3Eb3zF8rQ6jRA2WKuTKm3wyPTCPrB2PekIfQ==",
+    "Xamarin.Forms/4.3.0.947036": {
+      "sha512": "oEAwwHfaZesC+VvP07UoctI1DGIgewZlKMr/sHPl/hNMRM6ZfccPgOY19Yw017asj9z7PKXqpDDUbFFOJ2jN4A==",
       "type": "package",
-      "path": "xamarin.forms/4.2.0.815419",
+      "path": "xamarin.forms/4.3.0.947036",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -985,9 +985,11 @@
         "lib/uap10.0/Xamarin.Forms.Platform.UAP/FormsProgressBarStyle.xbf",
         "lib/uap10.0/Xamarin.Forms.Platform.UAP/FormsTextBoxStyle.xbf",
         "lib/uap10.0/Xamarin.Forms.Platform.UAP/MasterDetailControlStyle.xbf",
+        "lib/uap10.0/Xamarin.Forms.Platform.UAP/Microsoft.UI.Xaml/DensityStyles/Compact.xbf",
         "lib/uap10.0/Xamarin.Forms.Platform.UAP/PageControlStyle.xbf",
         "lib/uap10.0/Xamarin.Forms.Platform.UAP/Properties/Xamarin.Forms.Platform.UAP.rd.xml",
         "lib/uap10.0/Xamarin.Forms.Platform.UAP/Resources.xbf",
+        "lib/uap10.0/Xamarin.Forms.Platform.UAP/Shell/ShellStyles.xbf",
         "lib/uap10.0/Xamarin.Forms.Platform.UAP/SliderStyle.xbf",
         "lib/uap10.0/Xamarin.Forms.Platform.UAP/StepperControl.xbf",
         "lib/uap10.0/Xamarin.Forms.Platform.UAP/TabbedPageStyle.xbf",
@@ -996,7 +998,7 @@
         "lib/uap10.0/Xamarin.Forms.Xaml.dll",
         "lib/uap10.0/Xamarin.Forms.Xaml.pdb",
         "lib/uap10.0/Xamarin.Forms.Xaml.xml",
-        "xamarin.forms.4.2.0.815419.nupkg.sha512",
+        "xamarin.forms.4.3.0.947036.nupkg.sha512",
         "xamarin.forms.nuspec"
       ]
     },
@@ -1010,24 +1012,24 @@
     "Xamarin.iOS,Version=v1.0": [
       "FrameShadowDemo >= 1.0.0",
       "Xamarin.Essentials >= 1.3.1",
-      "Xamarin.Forms >= 4.2.0.815419"
+      "Xamarin.Forms >= 4.3.0.947036"
     ]
   },
   "packageFolders": {
-    "/Users/nikhil/.nuget/packages/": {}
+    "/Users/nikhilpardasani/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/nikhil/Documents/FrameShadowDemo/FrameShadowDemo/FrameShadowDemo/FrameShadowDemo.iOS/FrameShadowDemo.iOS.csproj",
+      "projectUniqueName": "/Users/nikhilpardasani/Documents/OutSource/FrameShadowDemo/FrameShadowDemo/FrameShadowDemo.iOS/FrameShadowDemo.iOS.csproj",
       "projectName": "FrameShadowDemo.iOS",
-      "projectPath": "/Users/nikhil/Documents/FrameShadowDemo/FrameShadowDemo/FrameShadowDemo/FrameShadowDemo.iOS/FrameShadowDemo.iOS.csproj",
-      "packagesPath": "/Users/nikhil/.nuget/packages/",
-      "outputPath": "/Users/nikhil/Documents/FrameShadowDemo/FrameShadowDemo/FrameShadowDemo/FrameShadowDemo.iOS/obj/",
+      "projectPath": "/Users/nikhilpardasani/Documents/OutSource/FrameShadowDemo/FrameShadowDemo/FrameShadowDemo.iOS/FrameShadowDemo.iOS.csproj",
+      "packagesPath": "/Users/nikhilpardasani/.nuget/packages/",
+      "outputPath": "/Users/nikhilpardasani/Documents/OutSource/FrameShadowDemo/FrameShadowDemo/FrameShadowDemo.iOS/obj/",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "configFilePaths": [
-        "/Users/nikhil/.config/NuGet/NuGet.Config"
+        "/Users/nikhilpardasani/.config/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "xamarinios10"
@@ -1038,8 +1040,8 @@
       "frameworks": {
         "xamarinios10": {
           "projectReferences": {
-            "/Users/nikhil/Documents/FrameShadowDemo/FrameShadowDemo/FrameShadowDemo/FrameShadowDemo/FrameShadowDemo.csproj": {
-              "projectPath": "/Users/nikhil/Documents/FrameShadowDemo/FrameShadowDemo/FrameShadowDemo/FrameShadowDemo/FrameShadowDemo.csproj"
+            "/Users/nikhilpardasani/Documents/OutSource/FrameShadowDemo/FrameShadowDemo/FrameShadowDemo/FrameShadowDemo.csproj": {
+              "projectPath": "/Users/nikhilpardasani/Documents/OutSource/FrameShadowDemo/FrameShadowDemo/FrameShadowDemo/FrameShadowDemo.csproj"
             }
           }
         }
@@ -1054,7 +1056,7 @@
           },
           "Xamarin.Forms": {
             "target": "Package",
-            "version": "[4.2.0.815419, )"
+            "version": "[4.3.0.947036, )"
           }
         }
       }
