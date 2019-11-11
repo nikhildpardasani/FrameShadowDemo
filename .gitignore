@@ -26,6 +26,7 @@ FrameShadowDemo/.vs/FrameShadowDemo/xs/project-cache/FrameShadowDemo.Android-Deb
 *.cache
 *.json
 *.cache
+*.dll
 *.json
 *.json
 FrameShadowDemo/.vs/FrameShadowDemo/xs/project-cache/FrameShadowDemo.iOS-Debug|iPhoneSimulator.json
@@ -450,3 +451,10 @@ FrameShadowDemo/.vs/FrameShadowDemo/xs/project-cache/FrameShadowDemo.Android-Deb
 FrameShadowDemo/.vs/FrameShadowDemo/xs/project-cache/FrameShadowDemo.iOS-Debug|iPhoneSimulator.json
 FrameShadowDemo/.vs/FrameShadowDemo/xs/project-cache/FrameShadowDemo-Debug.json
 FrameShadowDemo/.vs/FrameShadowDemo/xs/project-cache/FrameShadowDemo.Android-Debug.json
+FrameShadowDemo/FrameShadowDemo.Android/obj/Debug/lp/17.stamp
+FrameShadowDemo/.vs/FrameShadowDemo/xs/project-cache/FrameShadowDemo-Debug.json
+FrameShadowDemo/FrameShadowDemo.iOS/obj/FrameShadowDemo.iOS.csproj.nuget.cache
+FrameShadowDemo/FrameShadowDemo.iOS/obj/FrameShadowDemo.iOS.csproj.nuget.dgspec.json
+FrameShadowDemo/FrameShadowDemo.iOS/obj/FrameShadowDemo.iOS.csproj.nuget.g.props
+FrameShadowDemo/FrameShadowDemo.iOS/obj/FrameShadowDemo.iOS.csproj.nuget.g.targets
+FrameShadowDemo/FrameShadowDemo.iOS/obj/iPhoneSimulator/Debug/FrameShadowDemo.iOS.csprojAssemblyReference.cache
