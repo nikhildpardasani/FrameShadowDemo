@@ -16,7 +16,7 @@ namespace FrameShadowDemo
     {
         #region Constants
 
-        private const string AppKeyDropboxtoken = "";
+        private const string AppKeyDropboxtoken = "MyDropboxToken";
 
         private const string ClientId = "s3xczzf9u0wn7bh";
         
@@ -68,11 +68,45 @@ namespace FrameShadowDemo
             this.oauth2State = Guid.NewGuid().ToString("N");
             var authorizeUri = DropboxOAuth2Helper.GetAuthorizeUri(OAuthResponseType.Token, ClientId, new Uri(RedirectUri), this.oauth2State);
             var webView = new WebView { Source = new UrlWebViewSource { Url = authorizeUri.AbsoluteUri } };
-            webView.Navigating += this.WebViewOnNavigating;
+            webView.Navigated += WebView_Navigated;
             var contentPage = new ContentPage { Content = webView };
             await Application.Current.MainPage.Navigation.PushModalAsync(contentPage);
         }
-        
+
+        private async void WebView_Navigated(object sender, WebNavigatedEventArgs e)
+        {
+            if (!e.Url.StartsWith(RedirectUri, StringComparison.OrdinalIgnoreCase))
+            {
+                // we need to ignore all navigation that isn't to the redirect uri.
+                return;
+            }
+
+            try
+            {
+                var result = DropboxOAuth2Helper.ParseTokenFragment(new Uri(e.Url));
+
+                if (result.State != this.oauth2State)
+                {
+                    return;
+                }
+
+                this.AccessToken = result.AccessToken;
+
+                await SaveDropboxToken(this.AccessToken);
+                this.OnAuthenticated?.Invoke();
+            }
+            catch (Exception ex)
+            {
+                // There was an error in the URI passed to ParseTokenFragment
+            }
+            finally
+            {
+                //e.Cancel = true;
+                if (Application.Current.MainPage.Navigation.ModalStack.Count > 0)
+                    await Application.Current.MainPage.Navigation.PopModalAsync();
+            }
+        }
+
         public async Task<IList<Metadata>> ListFiles()
         {
             try
@@ -209,14 +243,15 @@ namespace FrameShadowDemo
                 await SaveDropboxToken(this.AccessToken);
                 this.OnAuthenticated?.Invoke();
             }
-            catch (ArgumentException)
+            catch (Exception ex)
             {
                 // There was an error in the URI passed to ParseTokenFragment
             }
             finally
             {
                 e.Cancel = true;
-                await Application.Current.MainPage.Navigation.PopModalAsync();
+                if (Application.Current.MainPage.Navigation.ModalStack.Count > 0)
+                    await Application.Current.MainPage.Navigation.PopModalAsync();
             }
         }
 
