@@ -4,6 +4,8 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     x:Class="FrameShadowDemo.Page1">
     <ContentPage.Content>
-        
+        <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+            <Button x:Name="btn1" Text="Click here to dropbox" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"/>
+        </StackLayout>
     </ContentPage.Content>
 </ContentPage>
