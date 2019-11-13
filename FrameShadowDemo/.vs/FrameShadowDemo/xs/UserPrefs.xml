@@ -1,21 +1,18 @@
 ﻿<Properties StartupConfiguration="{393F09E6-A3BE-4199-B7F7-E5E6E91144FB}|Default" NuGet.AddPackagesDialog.IncludePrerelease="True">
-  <MonoDevelop.Ide.Workbench ActiveDocument="FrameShadowDemo.iOS/Main.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="FrameShadowDemo/Page1.xaml">
     <Files>
       <File FileName="FrameShadowDemo/App.xaml.cs" Line="1" Column="1" />
-      <File FileName="FrameShadowDemo/DropBoxService.cs" Line="213" Column="1" />
+      <File FileName="FrameShadowDemo/DropBoxService.cs" Line="19" Column="66" />
       <File FileName="FrameShadowDemo/DropBoxViewModel.cs" Line="1" Column="1" />
-      <File FileName="FrameShadowDemo.iOS/Main.cs" Line="17" Column="1" />
-      <File FileName="FrameShadowDemo.iOS/Main.cs" Line="17" Column="1" />
+      <File FileName="FrameShadowDemo/Page1.xaml" Line="8" Column="29" />
+      <File FileName="FrameShadowDemo/Page1.xaml.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="FrameShadowDemo" expanded="True">
             <Node name="FrameShadowDemo" expanded="True">
-              <Node name="Page1.xaml" expanded="True" />
-            </Node>
-            <Node name="FrameShadowDemo.iOS" expanded="True">
-              <Node name="Main.cs" selected="True" />
+              <Node name="Page1.xaml" expanded="True" selected="True" />
             </Node>
           </Node>
         </State>
@@ -27,7 +24,9 @@
   <MonoDevelop.Ide.ItemProperties.FrameShadowDemo.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.BEB6DA83-1054-4B42-A854-1CC75DEE3990" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
-      <Breakpoint file="/Users/nikhilpardasani/Documents/OutSource/FrameShadowDemo/FrameShadowDemo/FrameShadowDemo/DropBoxService.cs" relfile="FrameShadowDemo/DropBoxService.cs" line="213" column="1" />
+      <Breakpoint file="/Users/nikhilpardasani/Documents/OutSource/FrameShadowDemo/FrameShadowDemo/FrameShadowDemo/DropBoxService.cs" relfile="FrameShadowDemo/DropBoxService.cs" line="95" column="1" />
+      <Breakpoint file="/Users/nikhilpardasani/Documents/OutSource/FrameShadowDemo/FrameShadowDemo/FrameShadowDemo/DropBoxService.cs" relfile="FrameShadowDemo/DropBoxService.cs" line="69" column="1" />
+      <Breakpoint file="/Users/nikhilpardasani/Documents/OutSource/FrameShadowDemo/FrameShadowDemo/FrameShadowDemo/DropBoxService.cs" relfile="FrameShadowDemo/DropBoxService.cs" line="53" column="1" />
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />

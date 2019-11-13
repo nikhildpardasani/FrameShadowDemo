@@ -6,6 +6,7 @@
     <ContentPage.Content>
         <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
             <Button x:Name="btn1" Text="Click here to dropbox" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"/>
+            <Button x:Name="btn2" Text="Click here to dropbox list" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
