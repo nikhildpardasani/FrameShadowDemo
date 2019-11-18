@@ -110,7 +110,7 @@
           "lib/netstandard1.3/Newtonsoft.Json.dll": {}
         }
       },
-      "Refractored.MvvmHelpers/1.5.1-beta": {
+      "Refractored.MvvmHelpers/1.6.1-beta": {
         "type": "package",
         "dependencies": {
           "System.ValueTuple": "4.5.0"
@@ -767,7 +767,7 @@
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
           "Dropbox.Api": "4.9.4",
-          "Refractored.MvvmHelpers": "1.5.1-beta",
+          "Refractored.MvvmHelpers": "1.6.1-beta",
           "Xamarin.Essentials": "1.3.1",
           "Xamarin.Forms": "4.3.0.991211"
         },
@@ -888,7 +888,7 @@
           "lib/netstandard1.3/Newtonsoft.Json.dll": {}
         }
       },
-      "Refractored.MvvmHelpers/1.5.1-beta": {
+      "Refractored.MvvmHelpers/1.6.1-beta": {
         "type": "package",
         "dependencies": {
           "System.ValueTuple": "4.5.0"
@@ -1481,7 +1481,7 @@
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
           "Dropbox.Api": "4.9.4",
-          "Refractored.MvvmHelpers": "1.5.1-beta",
+          "Refractored.MvvmHelpers": "1.6.1-beta",
           "Xamarin.Essentials": "1.3.1",
           "Xamarin.Forms": "4.3.0.991211"
         },
@@ -1602,7 +1602,7 @@
           "lib/netstandard1.3/Newtonsoft.Json.dll": {}
         }
       },
-      "Refractored.MvvmHelpers/1.5.1-beta": {
+      "Refractored.MvvmHelpers/1.6.1-beta": {
         "type": "package",
         "dependencies": {
           "System.ValueTuple": "4.5.0"
@@ -2195,7 +2195,7 @@
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
           "Dropbox.Api": "4.9.4",
-          "Refractored.MvvmHelpers": "1.5.1-beta",
+          "Refractored.MvvmHelpers": "1.6.1-beta",
           "Xamarin.Essentials": "1.3.1",
           "Xamarin.Forms": "4.3.0.991211"
         },
@@ -2316,7 +2316,7 @@
           "lib/netstandard1.3/Newtonsoft.Json.dll": {}
         }
       },
-      "Refractored.MvvmHelpers/1.5.1-beta": {
+      "Refractored.MvvmHelpers/1.6.1-beta": {
         "type": "package",
         "dependencies": {
           "System.ValueTuple": "4.5.0"
@@ -2909,7 +2909,7 @@
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
           "Dropbox.Api": "4.9.4",
-          "Refractored.MvvmHelpers": "1.5.1-beta",
+          "Refractored.MvvmHelpers": "1.6.1-beta",
           "Xamarin.Essentials": "1.3.1",
           "Xamarin.Forms": "4.3.0.991211"
         },
@@ -3096,13 +3096,14 @@
         "tools/install.ps1"
       ]
     },
-    "Refractored.MvvmHelpers/1.5.1-beta": {
-      "sha512": "JIozNkWWAGeRRelOo3h9zTKvSbC44I6PAw0/bMV7dSgaWRjusRl8qHCle6bTG+UTg0ZMI8mTpUA2aTrjDTpmog==",
+    "Refractored.MvvmHelpers/1.6.1-beta": {
+      "sha512": "oUp75ED0/aClLHbsdDEhHAloyzT5RJjCLGSBAxz2Kgy3TlQ64rlQ6qi0yqwnNz6YmRD7/WqnE8C0RmvTDwqlMg==",
       "type": "package",
-      "path": "refractored.mvvmhelpers/1.5.1-beta",
+      "path": "refractored.mvvmhelpers/1.6.1-beta",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
+        "Icon.png",
         "lib/net461/MvvmHelpers.dll",
         "lib/net461/MvvmHelpers.pdb",
         "lib/net461/MvvmHelpers.xml",
@@ -3112,7 +3113,7 @@
         "lib/netstandard2.0/MvvmHelpers.dll",
         "lib/netstandard2.0/MvvmHelpers.pdb",
         "lib/netstandard2.0/MvvmHelpers.xml",
-        "refractored.mvvmhelpers.1.5.1-beta.nupkg.sha512",
+        "refractored.mvvmhelpers.1.6.1-beta.nupkg.sha512",
         "refractored.mvvmhelpers.nuspec"
       ]
     },

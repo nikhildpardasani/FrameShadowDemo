@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Threading.Tasks;
+using FrameShadowDemo.Pages;
 using Xamarin.Forms;
 
 namespace FrameShadowDemo
@@ -9,7 +10,7 @@ namespace FrameShadowDemo
     public partial class CardListPage : BackArrowScrollableView
     {
 
-        //CardListViewModel vm;
+        CardListViewModel vm;
 
         int cardSetId;
         string cardSetName;
@@ -20,16 +21,16 @@ namespace FrameShadowDemo
         public CardListPage()
         {
             InitializeComponent();
-            //BindingContext = vm = new CardListViewModel();
+            BindingContext = vm = new CardListViewModel();
         }
 
         protected async override void OnAppearing()
         {
             base.OnAppearing();
             //vm.cardSetId = cardSetId;             //vm.cardSetName = cardSetName;
-            this.PageTitle = cardSetName + " Card Set";
+            this.PageTitle = "Card Set";
             //vm.SetIntroFooter();
-            //await Task.Run(async () => await vm.OnAppearing());
+            await Task.Run(async () => await vm.OnAppearing());
         }
 
     }

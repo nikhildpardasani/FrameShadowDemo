@@ -59,7 +59,8 @@ namespace FrameShadowDemo
         }
         private static void ConfigureColors(GButton control, string state)
         {
-            if (state == null) state = "D";
+            //if (state == null)
+                state = "D";
             switch (state)
             {
                 case "D":

@@ -110,7 +110,7 @@
             },
             "Refractored.MvvmHelpers": {
               "target": "Package",
-              "version": "[1.5.1-beta, )"
+              "version": "[1.6.1-beta, )"
             },
             "Xamarin.Essentials": {
               "target": "Package",
