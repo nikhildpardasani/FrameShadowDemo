@@ -10,7 +10,7 @@ namespace FrameShadowDemo
         {
             InitializeComponent();
 
-            MainPage = new Page1();
+            MainPage = new CardListPage();
         }
 
         protected override void OnStart()
