@@ -27,6 +27,12 @@ namespace FrameShadowDemo
             InitializeComponent();
             BindingContext = this;
             tap.Tapped += MyTappedHandler;
+            scroll.Scrolled += Scroll_Scrolled;
+        }
+
+        private void Scroll_Scrolled(object sender, ScrolledEventArgs e)
+        {
+
         }
 
         protected override void OnAppearing()

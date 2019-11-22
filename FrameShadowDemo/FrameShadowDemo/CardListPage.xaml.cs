@@ -7,7 +7,7 @@ namespace FrameShadowDemo
 {
     [QueryProperty("Name", "name")]
     [QueryProperty("RowId", "rowId")]
-    public partial class CardListPage : BackArrowScrollableView
+    public partial class CardListPage : ContentPage
     {
 
         CardListViewModel vm;
@@ -28,7 +28,7 @@ namespace FrameShadowDemo
         {
             base.OnAppearing();
             //vm.cardSetId = cardSetId;             //vm.cardSetName = cardSetName;
-            this.PageTitle = "Card Set";
+            this.Title = "Card Set";
             //vm.SetIntroFooter();
             await Task.Run(async () => await vm.OnAppearing());
         }

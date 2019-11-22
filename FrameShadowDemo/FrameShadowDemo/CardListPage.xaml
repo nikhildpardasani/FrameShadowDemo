@@ -1,11 +1,12 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<t:BackArrowScrollableView xmlns="http://xamarin.com/schemas/2014/forms"
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
                            xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
                            xmlns:local="clr-namespace:FrameShadowDemo;assembly=FrameShadowDemo"
                            xmlns:t="clr-namespace:FrameShadowDemo"
                            x:Class="FrameShadowDemo.CardListPage"
                            x:Name="ThisPage"
                            BackgroundColor="{DynamicResource PageBackgroundColor}">
+    <ContentPage.Content>
         <StackLayout Spacing="0"
                      VerticalOptions="FillAndExpand">
             <StackLayout x:Name="details"
@@ -26,10 +27,17 @@
                         <t:LineTemplate />
                         <t:InfoTemplate Text="{Binding SectionFooter}" />
                         <t:LineTemplate  IsVisible="{Binding MessageGridVisible}" />
-                        <StackLayout Orientation="Vertical"
-                                     Spacing="0"
-                                     BindableLayout.ItemsSource="{Binding Phrases}">
-                            <BindableLayout.ItemTemplate>
+                        <CollectionView x:Name="cv"
+                                        ItemsSource="{Binding PhraseToDisplay}"
+                                        SelectionMode="None"
+                                        RemainingItemsThreshold="0"
+                                        RemainingItemsThresholdReachedCommand="{Binding LoadMorePhrasesCommand}">
+                            <CollectionView.ItemsLayout>
+                                <LinearItemsLayout
+                                    ItemSpacing="10"
+                                    Orientation="Vertical"/>
+                            </CollectionView.ItemsLayout>
+                            <CollectionView.ItemTemplate>
                                 <DataTemplate>
                                     <t:CardGridTemplate Text1="{Binding English}"
                                                         Text2="{Binding Kana}"
@@ -58,11 +66,12 @@
                                                         F5State="{Binding F5}"
                                                         TapCommandParam="{Binding .}" />
                                 </DataTemplate>
-                            </BindableLayout.ItemTemplate>
-                        </StackLayout>
+                            </CollectionView.ItemTemplate>
+                        </CollectionView>
                     </t:Stack>
                 </t:FrameBorder>
             </StackLayout>
             <t:SpacerTemplate />
         </StackLayout>
-</t:BackArrowScrollableView >
+        </ContentPage.Content>
+</ContentPage>

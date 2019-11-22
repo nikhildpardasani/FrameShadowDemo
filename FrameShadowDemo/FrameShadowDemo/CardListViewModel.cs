@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Input;
 using Japanese;
@@ -21,12 +22,22 @@ namespace FrameShadowDemo.Pages
         public string PageTitle { get => _pageTitle; set => SetProperty(ref _pageTitle, value); }
 
         public IAsyncCommand<string> OpenPageCmd { get; set; }
+        public ICommand LoadMorePhrasesCommand { get; set; }
 
         #region Properties
         public int cardSetId;         public string cardSetName;
 
-        private ObservableCollection<Phrase> _phrases = new ObservableCollection<Phrase>();
-        public ObservableCollection<Phrase> Phrases { get => _phrases; set => SetProperty(ref _phrases, value); }
+        public List<Phrase> Phrases { get; set; }
+
+        private ObservableRangeCollection<Phrase> phraseToDisplay = new ObservableRangeCollection<Phrase>();
+        public ObservableRangeCollection<Phrase> PhraseToDisplay
+        {
+            get => phraseToDisplay;
+            set
+            {
+                SetProperty(ref phraseToDisplay, value);
+            }
+        }
 
         bool _MessageGridVisible = false;
         public bool MessageGridVisible { get => _MessageGridVisible; set => SetProperty(ref _MessageGridVisible, value); }
@@ -46,6 +57,19 @@ namespace FrameShadowDemo.Pages
         public ICommand F5BtnCmd { get; set; }
         #endregion
 
+        int batchSize = 10;
+        int currentFlightIndex = 0;
+
+        public CardListViewModel()
+        {
+            IntroTitle = "Contents";
+            SectionTitle = "Information";
+            SectionFooter = "Fetching card details, please be patient";
+            IsBusy = true;
+            LoadMorePhrasesCommand = new Xamarin.Forms.Command(LoadMore);
+        }
+
+
         public void SetIntroFooter()
         {
             IntroFooter = "There are 100 cards in this card set.";
@@ -56,29 +80,30 @@ namespace FrameShadowDemo.Pages
             IsBusy = true;
             await Task.Delay(40);
             //Phrases = new ObservableCollection<Phrase>(App.DB.GetPhrasesForCardSet(cardSetId));
-            List<Phrase> list = new List<Phrase>();
-            for (int i = 1; i <= 100; i++)
+            Phrases = new List<Phrase>();
+            for (int i = 1; i <= 1000; i++)
             {
                 Phrase ph = new Phrase();
                 ph.English = "English" + i;
                 ph.PhraseId = i + "";
                 ph.PhraseNum = i;
-                list.Add(ph);
+                Phrases.Add(ph);
             }
-            Phrases = new ObservableCollection<Phrase>(list);
             var num = 1;
             foreach (var x in Phrases) { x.Row = num++; }
             SectionTitle = "Cards";
             SectionFooter = "Tap H to mark a card as hidden so it won't be included in the deck. Tapping buttons 1 through 5 will add the card to one of your Favorite collections F1 through F5";
             MessageGridVisible = true;
+
+            PhraseToDisplay = new ObservableRangeCollection<Phrase>(Phrases.Take(batchSize).ToList());
+            currentFlightIndex = 0;
             IsBusy = false;
         }
-        public CardListViewModel()
+
+        void LoadMore()
         {
-            IntroTitle = "Contents";
-            SectionTitle = "Information";
-            SectionFooter = "Fetching card details, please be patient";
-            IsBusy = true;
+            PhraseToDisplay.AddRange(Phrases.Skip(batchSize + currentFlightIndex).Take(batchSize));
+            currentFlightIndex += batchSize;
         }
     }
 }
