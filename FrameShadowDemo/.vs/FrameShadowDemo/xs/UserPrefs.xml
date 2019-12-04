@@ -1,21 +1,11 @@
-﻿<Properties StartupConfiguration="{393F09E6-A3BE-4199-B7F7-E5E6E91144FB}|Default" NuGet.AddPackagesDialog.IncludePrerelease="True">
-  <MonoDevelop.Ide.Workbench ActiveDocument="FrameShadowDemo/CardListViewModel.cs">
-    <Files>
-      <File FileName="FrameShadowDemo/CardListPage.xaml" Line="31" Column="41" />
-      <File FileName="FrameShadowDemo/CardListPage.xaml.cs" Line="24" Column="47" />
-      <File FileName="FrameShadowDemo.iOS/Main.cs" Line="17" Column="1" />
-      <File FileName="FrameShadowDemo/Controls/GButton.cs" />
-      <File FileName="FrameShadowDemo/Pages/BackArrowScrollableView.xaml" />
-      <File FileName="FrameShadowDemo/Pages/BackArrowScrollableView.xaml.cs" Line="36" Column="1" />
-      <File FileName="FrameShadowDemo/CardListViewModel.cs" Line="1" Column="1" />
-    </Files>
+﻿<Properties StartupConfiguration="{D8D0ECEA-2A57-4F13-BDFE-99BEB94810A1}|Default" NuGet.AddPackagesDialog.IncludePrerelease="True">
+  <MonoDevelop.Ide.Workbench>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="FrameShadowDemo" expanded="True">
             <Node name="FrameShadowDemo" expanded="True">
-              <Node name="CardListPage.xaml" expanded="True" />
-              <Node name="CardListViewModel.cs" selected="True" />
+              <Node name="CardListPage.xaml" selected="True" />
             </Node>
             <Node name="FrameShadowDemo.iOS" expanded="True" />
           </Node>
@@ -23,13 +13,12 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.FrameShadowDemo.Android PreferredExecutionTarget="Android.pixel" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.ItemProperties.FrameShadowDemo.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.D13A5EA3-6C42-4FB2-B331-FE9DEA6E982C" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore>
-      <Breakpoint file="/Users/nikhilpardasani/Documents/OutSource/FrameShadowDemo/FrameShadowDemo/FrameShadowDemo/CardListViewModel.cs" relfile="FrameShadowDemo/CardListViewModel.cs" line="56" column="1" />
-    </BreakpointStore>
+    <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />
 </Properties>

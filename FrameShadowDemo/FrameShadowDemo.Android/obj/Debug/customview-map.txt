@@ -1,6 +1,5 @@
 @string/appbar_scrolling_view_behavior;/Users/nikhilpardasani/Documents/OutSource/FrameShadowDemo/FrameShadowDemo/FrameShadowDemo.Android/obj/Debug/lp/41/jl/res/layout/flyoutcontent.xml
 @string/appbar_scrolling_view_behavior;/Users/nikhilpardasani/Documents/OutSource/FrameShadowDemo/FrameShadowDemo/FrameShadowDemo.Android/obj/Debug/lp/41/jl/res/layout/rootlayout.xml
-@string/appbar_scrolling_view_behavior;/Users/nikhilpardasani/Documents/OutSource/FrameShadowDemo/FrameShadowDemo/FrameShadowDemo.Android/obj/Debug/lp/41/jl/res/layout/shellcontent.xml
 adaptive-icon;obj/Debug/res/mipmap-anydpi-v26/icon.xml
 adaptive-icon;obj/Debug/res/mipmap-anydpi-v26/icon_round.xml
 alpha;/Users/nikhilpardasani/Documents/OutSource/FrameShadowDemo/FrameShadowDemo/FrameShadowDemo.Android/obj/Debug/lp/41/jl/res/anim/enterfromleft.xml
@@ -14,8 +13,6 @@ android.support.design.widget.CoordinatorLayout;/Users/nikhilpardasani/Documents
 android.support.design.widget.CoordinatorLayout;/Users/nikhilpardasani/Documents/OutSource/FrameShadowDemo/FrameShadowDemo/FrameShadowDemo.Android/obj/Debug/lp/41/jl/res/layout/shellcontent.xml
 android.support.design.widget.TabLayout;/Users/nikhilpardasani/Documents/OutSource/FrameShadowDemo/FrameShadowDemo/FrameShadowDemo.Android/obj/Debug/lp/41/jl/res/layout/rootlayout.xml
 android.support.design.widget.TabLayout;obj/Debug/res/layout/tabbar.xml
-android.support.v4.widget.NestedScrollView;/Users/nikhilpardasani/Documents/OutSource/FrameShadowDemo/FrameShadowDemo/FrameShadowDemo.Android/obj/Debug/lp/41/jl/res/layout/rootlayout.xml
-android.support.v4.widget.NestedScrollView;/Users/nikhilpardasani/Documents/OutSource/FrameShadowDemo/FrameShadowDemo/FrameShadowDemo.Android/obj/Debug/lp/41/jl/res/layout/shellcontent.xml
 android.support.v7.widget.RecyclerView;/Users/nikhilpardasani/Documents/OutSource/FrameShadowDemo/FrameShadowDemo/FrameShadowDemo.Android/obj/Debug/lp/41/jl/res/layout/flyoutcontent.xml
 android.support.v7.widget.Toolbar;/Users/nikhilpardasani/Documents/OutSource/FrameShadowDemo/FrameShadowDemo/FrameShadowDemo.Android/obj/Debug/lp/41/jl/res/layout/rootlayout.xml
 android.support.v7.widget.Toolbar;/Users/nikhilpardasani/Documents/OutSource/FrameShadowDemo/FrameShadowDemo/FrameShadowDemo.Android/obj/Debug/lp/41/jl/res/layout/shellcontent.xml
